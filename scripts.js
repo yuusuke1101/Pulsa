@@ -1,5 +1,5 @@
 // Nomor penerima pesan WhatsApp (admin)
-const adminNumber = '+62895410057557';
+const adminNumber = '62895410057557';
 
 // Fungsi untuk mengirim pesan WhatsApp
 function sendWhatsAppMessage(message) {
