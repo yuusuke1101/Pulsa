@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Pulsa dan E-Wallet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Pembelian Pulsa, E-Wallet, dan Token Listrik</h1>
+        <div class="text-center">
+            <select id="kategori" class="form-control w-50 mx-auto mb-4">
+                <option value="">Pilih Kategori</option>
+                <option value="pulsaSection">Pulsa</option>
+                <option value="ewalletSection">E-Wallet</option>
+                <option value="tokenListrikSection">Token Listrik</option>
+            </select>
+        </div>
+
+        <!-- Section Pulsa -->
+        <div id="pulsaSection" class="form-section d-none">
+            <h3 class="text-center">Top Up Pulsa</h3>
+            <form id="pulsaForm">
+                <div class="form-group">
+                    <label for="provider">Pilih Provider:</label>
+                    <select id="provider" class="form-control" required>
+                        <option value="Telkomsel">Telkomsel</option>
+                        <option value="Indosat">Indosat</option>
+                        <option value="Three">Three</option>
+                        <option value="Axis">Axis</option>
+                        <option value="XL">XL</option>
+                        <option value="Byuu">Byuu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nominal-pulsa">Pilih Nominal:</label>
+                    <select id="nominal-pulsa" class="form-control" required>
+                        <option value="5000">Rp 5.000</option>
+                        <option value="10000">Rp 10.000</option>
+                        <option value="15000">Rp 15.000</option>
+                        <option value="20000">Rp 20.000</option>
+                        <option value="25000">Rp 25.000</option>
+                        <option value="30000">Rp 30.000</option>
+                        <option value="50000">Rp 50.000</option>
+                        <option value="100000">Rp 100.000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nomor-hp">Nomor HP:</label>
+                    <input type="text" id="nomor-hp" class="form-control" placeholder="Masukkan nomor HP" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Beli Pulsa</button>
+            </form>
+        </div>
+
+        <!-- Section E-Wallet -->
+        <div id="ewalletSection" class="form-section d-none">
+            <h3 class="text-center">Top Up E-Wallet</h3>
+            <form id="ewalletForm">
+                <div class="form-group">
+                    <label for="ewallet">Pilih E-Wallet:</label>
+                    <select id="ewallet" class="form-control" required>
+                        <option value="Dana">Dana</option>
+                        <option value="GOPAY">GOPAY</option>
+                        <option value="OVO">OVO</option>
+                        <option value="SHOPEEPAY">SHOPEEPAY</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nominal-ewallet">Pilih Nominal:</label>
+                    <select id="nominal-ewallet" class="form-control" required>
+                        <option value="5000">Rp 5.000</option>
+                        <option value="10000">Rp 10.000</option>
+                        <option value="15000">Rp 15.000</option>
+                        <option value="20000">Rp 20.000</option>
+                        <option value="25000">Rp 25.000</option>
+                        <option value="30000">Rp 30.000</option>
+                        <option value="50000">Rp 50.000</option>
+                        <option value="100000">Rp 100.000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nomor-ewallet">Nomor E-Wallet:</label>
+                    <input type="text" id="nomor-ewallet" class="form-control" placeholder="Masukkan nomor E-Wallet" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Beli E-Wallet</button>
+            </form>
+        </div>
+
+        <!-- Section Token Listrik -->
+        <div id="tokenListrikSection" class="form-section d-none">
+            <h3 class="text-center">Pembelian Token Listrik</h3>
+            <form id="tokenListrikForm">
+                <div class="form-group">
+                    <label for="nominal-token">Pilih Nominal:</label>
+                    <select id="nominal-token" class="form-control" required>
+                        <option value="5000">Rp 5.000</option>
+                        <option value="10000">Rp 10.000</option>
+                        <option value="15000">Rp 15.000</option>
+                        <option value="20000">Rp 20.000</option>
+                        <option value="25000">Rp 25.000</option>
+                        <option value="30000">Rp 30.000</option>
+                        <option value="50000">Rp 50.000</option>
+                        <option value="100000">Rp 100.000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="id-pln">ID PLN / ID Pelanggan:</label>
+                    <input type="text" id="id-pln" class="form-control" placeholder="Masukkan ID PLN" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomor-whatsapp">Nomor WhatsApp Penerima Token:</label>
+                    <input type="text" id="nomor-whatsapp" class="form-control" placeholder="Masukkan nomor WhatsApp" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Beli Token Listrik</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

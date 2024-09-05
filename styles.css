@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+h1 {
+    color: #28a745; /* Warna hijau untuk judul */
+}
+
+h3 {
+    color: #28a745; /* Warna hijau untuk subjudul */
+}
+
+.form-section {
+    background-color: #ffffff; /* Warna latar belakang section */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk depth */
+    padding: 20px; /* Ruang di dalam section */
+    margin-bottom: 20px; /* Jarak antara section */
+    transition: all 0.3s ease; /* Animasi saat tampil */
+}
+
+.form-section:hover {
+    transform: scale(1.02); /* Efek zoom saat hover */
+}
+
+.btn-success {
+    background-color: #28a745; /* Warna hijau untuk tombol */
+    border: none; /* Menghapus border default */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
